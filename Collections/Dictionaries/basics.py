@@ -141,7 +141,6 @@ for key, value in my_dict.items():
                                 #         age: 25
                                 #         city: New York
 
-
 #9. Accessing Nested Dictionaries
 nested_dict = {"person": {"name": "Alice", "age": 25, "address": {"city": "NY", "zip": "10001"}}}
  #Access nested elements

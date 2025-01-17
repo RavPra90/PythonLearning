@@ -43,7 +43,6 @@ print(c1 - c2)  # Subtraction: Counter({'a': 2})
 
 
 
-
  # Dictionary Comprehensions with Conditions
 # Example: Create Dictionary with Filters
 data = {"a": 1, "b": 2, "c": 3, "d": 4}
