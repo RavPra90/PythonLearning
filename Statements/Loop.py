@@ -12,6 +12,9 @@ fruits = ["apple", "banana", "cherry"]
 for fruit in fruits:
     print(fruit)
 
+for letter in "Python":
+    print(letter)    #Output p y t h o n in each letter in a new line .
+
 
 # `while` Loop
 # The `while` loop continues until a condition is false.
@@ -100,7 +103,25 @@ student = {"name": "John", "age": 20, "grade": "A"}
 
 for key, value in student.items():
     print(f"{key}: {value}")
+# Output
+# name: John
+# age: 20
+# grade: A
 
+s= {'k1':'v1', 'k2':'v2', 'k3':'v3'}
+for i in s:
+    print(i)  # by default iterate over dictionary result in keys only
+# Output
+# k1
+# k2
+# k3
+
+for i in s.items():
+    print(i)
+# Output
+# ('k1', 'v1')
+# ('k2', 'v2')
+# ('k3', 'v3')
 
 #Comprehensions - A Pythonic Way to Loop:
 
@@ -158,7 +179,6 @@ for num in numbers:
 # Unpack elements while iterating.
 # Unpacking in a loop
 pairs = [(1, "one"), (2, "two"), (3, "three")]
-
 for number, name in pairs:
     print(f"{number}: {name}")
 
