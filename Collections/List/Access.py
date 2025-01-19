@@ -23,7 +23,7 @@ print(lst[1:4])   # Output: [20, 30, 40] (from index 1 to 3)
 print(lst[:3])    # Output: [10, 20, 30] (from start to index 2)
 print(lst[2:])    # Output: [30, 40, 50] (from index 2 to end)
 print(lst[::2])   # Output: [10, 30, 50] (every second element)
-print(lst[::-3])  # Output: [10, 20, 30] (from start to index 1)
+print(lst[:-3])  # Output: [10, 20] (from start to  index -4 )
 print(lst[::-1])  # Output: [50, 40, 30, 20, 10] (reverse the list)
 
 
@@ -69,7 +69,8 @@ print(squared)  # Output: [100, 400, 900, 1600, 2500]
 # You can pair multiple lists using `zip()` and access elements together.
 lst1 = [10, 20, 30]
 lst2 = ['A', 'B', 'C']
-
+lst = list(zip(lst1,lst2))
+print(lst)    #Output : [(10, 'A'), (20, 'B'), (30, 'C')]
 for num, char in zip(lst1, lst2):
     print(f"Number: {num}, Character: {char}")
 # Output:
@@ -93,6 +94,9 @@ nested_list = [[1, 2], [3, 4], [5, 6]]
 
 # Access the first inner list
 print(nested_list[0])  # Output: [1, 2]
-
 # Access the first element of the first inner list
 print(nested_list[0][0])  # Output: 1
+
+#faltten a list
+flattened = [num for row in nested_list for num  in row]
+print(flattened)  #Output [1, 2, 3, 4, 5, 6]
