@@ -41,10 +41,21 @@ print(lst[1:4])  # Output: [1, 2, 3] (elements at indices 1 to 3)
 # Reverse the list
 print(lst[::-1])  # Output: [5, 4, 3, 2, 1, 0]
 
+"""
+    lst[start:end] = ... replaces the elements in the range [start:end] with the new elements.
+    If start == end, the slice is empty, so the assignment inserts the new elements 
+        instead of replacing anything.
+    lst[2:2] is a slice that starts and ends at the same index (2), 
+        meaning it selects an empty slice at that position.
+    Assigning a list to an empty slice effectively inserts the new elements at 
+        that position without replacing any existing elements.
+
+"""
 # Replace a slice
 lst[2:4] = [9, 8]
-print(lst)  # Output: [0, 1, 9, 8, 4, 5]
-
+print(lst)   # Output: [0, 1, 9, 8, 4, 5]
+lst[2:2] = [2, 7]    #It will insert the list at given pos Output [0, 1, 2, 7, 9, 8, 4, 5]
+print(lst)
 
 
 # 5. Unpacking a List
@@ -78,6 +89,20 @@ print(unzipped)  # Output: [(1, 2, 3), ('a', 'b', 'c')]
 
 # 7. Removing Duplicates While Preserving Order
 # - Use `dict.fromkeys()` to remove duplicates and retain order.
+
+"""
+    dict.fromkeys(iterable) creates a dictionary where the keys are taken from the given iterable, 
+            and the values are set to None by default.
+    In Python dictionaries, keys are unique. If duplicate keys are encountered in the input, 
+            they are automatically ignored, keeping only the first occurrence of each key.
+    Starting from Python 3.7, dictionaries maintain the insertion order of their keys. 
+        This means that the order in which keys are added to the dictionary is the same order 
+        in which they will appear when iterating over the dictionary.
+    By using dict.fromkeys(lst), the duplicates are removed (because keys are unique),
+        and the original order of the elements in lst is preserved.
+
+"""
+
 lst = [1, 2, 2, 3, 4, 4, 5]
 unique = list(dict.fromkeys(lst))
 print(unique)  # Output: [1, 2, 3, 4, 5]
@@ -123,11 +148,9 @@ print(lst)  # Output: [1, 3, 4, 5, 7]
 # 12. Using `collections.Counter` for Frequency
 # - Count occurrences of elements in a list.
 from collections import Counter
-
 lst = [1, 2, 2, 3, 3, 3]
 freq = Counter(lst)
 print(freq)  # Output: Counter({3: 3, 2: 2, 1: 1})
-
 
 
 # 13. Multiply Lists Using `*` Operator
