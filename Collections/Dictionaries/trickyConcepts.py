@@ -1,13 +1,24 @@
 # Here are some tricky and advanced concepts and methods of Python dictionaries that go beyond the basics:
 
-# Using `defaultdict` from `collections`
-# A `defaultdict` assigns a default value to missing keys automatically, avoiding `KeyError`.
-
+# Using `defaultdict` from `collections
 # Example: Grouping Data
-from collections import defaultdict
 
+from collections import defaultdict
+"""
+    defaultdict is a subclass of Python's built-in dict that provides a default value for non-existent keys.
+    When you access a key that doesn't exist in the dictionary, defaultdict automatically initializes it with 
+        the default value (defined when the defaultdict is created).
+    Syntax:
+    from collections import defaultdict
+
+    defaultdict(default_factory)
+    default_factory: A callable (e.g., list, int, set, etc.) that defines the default value for missing keys. For example:
+    defaultdict(list) initializes a missing key with an empty list.
+    defaultdict(int) initializes a missing key with 0.
+"""
 data = [("a", 1), ("b", 2), ("a", 3), ("b", 4), ("c", 5)]
 grouped = defaultdict(list)
+# This creates a dictionary where each key will have a default value of an empty list ([]) if it doesn’t already exist.
 
 for key, value in data:
     grouped[key].append(value)

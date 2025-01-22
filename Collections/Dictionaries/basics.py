@@ -35,10 +35,13 @@ print(my_dict)           # Output : {1: 'apple', 2: 'ball'}
 
 
 #  Accessing Dictionary Elements
+"""
+    While indexing is used with other container types to access values, dictionary uses keys.
+    Key can be used either inside square brackets or with the get() method.
+    The difference while using get() is that it returns None instead of KeyError, 
+        if the key is not found.
 
-#While indexing is used with other container types to access values, dictionary uses keys.
-#Key can be used either inside square brackets or with the get() method.
-#The difference while using get() is that it returns None instead of KeyError, if the key is not found.
+"""
 
 # Using Square Brackets
 my_dict = {"name": "Alice", "age": 25, "city": "New York"}
@@ -84,12 +87,14 @@ print(my_dict)
 
 
 # Deleting Elements
+"""
+    We can remove a particular item in a dictionary by using the method pop().
+    This method removes as item with the provided key and returns the value.
+    The method, popitem() can be used to remove and return an arbitrary item (key, value) form the dictionary.
+    All the items can be removed at once using the clear() method.
+    We can also use the del keyword to remove individual items or the entire dictionary itself.
 
-# We can remove a particular item in a dictionary by using the method pop().
-# This method removes as item with the provided key and returns the value.
-# The method, popitem() can be used to remove and return an arbitrary item (key, value) form the dictionary.
-# All the items can be removed at once using the clear() method.
-#We can also use the del keyword to remove individual items or the entire dictionary itself.
+"""
 
 #Using `del`
 del my_dict["city"]
@@ -128,8 +133,8 @@ print(filtered)   #Output: {'b': 15, 'c': 20}
 # 6. Iterating Through a Dictionary
 # Looping Through Keys
 my_dict = {"name": "Alice", "age": 25, "city": "New York"}
-for key in my_dict:
-    print(key)   #Outputs: name, age, country
+for x in my_dict:
+    print(x)   # Bydefault it prints the key - Outputs: name, age, country
 
 # Looping Through Values
 for value in my_dict.values():
