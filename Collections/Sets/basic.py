@@ -48,7 +48,6 @@ print(5 in s)   # Output: False
 
  # Iterating Over a Set
 s = {1, 2, 3}
-
 for elem in s:
     print(elem, end=" ")  # Output: 1 2 3 (order may vary)
 
