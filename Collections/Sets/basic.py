@@ -16,7 +16,6 @@ empty_set = set()
 print(empty_set)  # Output: set()
 
 
-
 # Adding and Removing Elements
 s = {1, 2, 3}
 
