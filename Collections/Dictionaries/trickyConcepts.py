@@ -121,6 +121,21 @@ sorted_custom = dict(sorted(data.items(), key=lambda x: len(x[0])))
 print(sorted_custom)  # Output: {'kiwi': 1, 'apple': 3, 'banana': 2}
 
 
+dictlist=[{'name':'Rahul', 'age':23, 'marks':60}, {'name':'Anil', 'age':18, 'marks':55}, {'name':'Sunil', 'age':21, 'marks':90}]
+newlist=sorted(dictlist, key = lambda k:k['name'])
+print(newlist)
+#output: [{'name': 'Anil', 'age': 18, 'marks': 55}, {'name': 'Rahul', 'age': 23, 'marks': 60}, {'name': 'Sunil', 'age': 21, 'marks': 90}]
+
+
+"""
+OrderedDict is a sub class of dictionary which remembers the order of entries added in dictionary object. 
+When iterating over an ordered dictionary, the items are returned in the order their keys were first added.
+"""
+from collections import OrderedDict
+D = {5:'fff', 3:'ttt', 1:'ooo',4:'bbb', 2:'ddd'}
+OrderedDict(sorted(D.items(), key = lambda t: t[0]))
+#Output: OrderedDict([(1, 'ooo'), (2, 'ddd'), (3, 'ttt'), (4, 'bbb'), (5, 'fff')])
+
 
 # Nested Dictionary Operations
 # Accessing and Updating Nested Keys
