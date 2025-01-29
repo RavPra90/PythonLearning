@@ -1,6 +1,7 @@
 """
 Python Collection Conversions: Different Ways to Convert Between Collections
-In Python, we often need to convert one collection type (list, tuple, set, dictionary, etc.) into another. Below are various methods to achieve these conversions, along with explanations and code snippets.
+In Python, we often need to convert one collection type (list, tuple, set, dictionary, etc.) into another.
+Below are various methods to achieve these conversions, along with explanations and code snippets.
 """
 
 
