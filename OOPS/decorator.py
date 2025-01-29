@@ -112,7 +112,7 @@ def add(a, b):
 
 add(3, 5)
 # Output:
-# Executing 'add' called with arguments (3, 5) and {}
+# Executing 'add' called with arguments {3} and {5}
 # Function 'add' returned 8
 
 

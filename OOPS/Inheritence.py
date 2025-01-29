@@ -2,6 +2,7 @@
 Inheritance is a core feature of object-oriented programming (OOP) in Python.
 It allows one class (child or derived class) to inherit attributes and methods from another class (parent or base class).
 This promotes reusability and reduces redundancy.
+
 """
 
 # Single Inheritance

@@ -1,20 +1,38 @@
 #  Basic Concepts on Python Classes (with Code Snippets)
+"""
+Python classes are a fundamental part of object-oriented programming (OOP),
+allowing you to create custom data structures with attributes and methods.
+Here's a comprehensive overview of Python classes with examples:
+1. What is a Class?
+A class is a blueprint for creating objects. It defines attributes (variables) and methods (functions)
+that the objects instantiated from the class will have.
 
-# Python classes are a fundamental part of object-oriented programming (OOP),
-# allowing you to create custom data structures with attributes and methods.
-# Here's a comprehensive overview of Python classes with examples:
-# 1. What is a Class?
-# A class is a blueprint for creating objects. It defines attributes (variables) and methods (functions)
-# that the objects instantiated from the class will have.
+"""
+
+#We can create an empty class using pass statement in Python.
+# An empty class
+class Test:
+    pass
 
 # Basic syntax of a class
 class MyClass:
     # Class attribute
     class_attribute = "I am a class attribute"
 
+    """
+    The word 'self' is used to represent the instance of a class.
+    By using the "self" keyword we access the attributes and methods of the class in python.
+    
+    The __init__ method
+    The __init__ method is similar to constructors in C++ and Java. It is run as soon as an object of a class is instantiated. 
+    The method is useful to do any initialization you want to do with your object.
+    """
+
     # Constructor method (initializer)
     def __init__(self, instance_attribute):
         self.instance_attribute = instance_attribute  # Instance attribute
+
+
 
 # Create an object of MyClass
 obj = MyClass("I am an instance attribute")
@@ -79,6 +97,7 @@ print(car2.wheels)  # Output: 6
 - Instance methods: Operate on an instance of the class.
 - Class methods: Operate on the class itself (use `@classmethod`).
 - Static methods: Don’t operate on an instance or the class (use `@staticmethod`).
+- A class method takes cls as first parameter while a static method needs no specific parameters.
 """
 
 class Calculator:

@@ -9,6 +9,13 @@ This is useful for working with large datasets or streams of data without loadin
 #A generator function uses the `yield` keyword instead of `return`.
 #Each time `yield` is called, the function pauses its state and resumes from there on the next call.
 
+"""
+The difference is that while a return statement terminates a function entirely,
+yield statement pauses the function saving all its states and later continues from there on successive calls.
+Return sends a specified value back to its caller whereas Yield can produce a sequence of values.
+
+"""
+
 # Example: A generator to produce numbers from 1 to n
 def number_generator(n):
     for i in range(1, n + 1):
@@ -45,6 +52,7 @@ Lazy Evaluation: Generate values only when needed, saving resources.
 Pipelines: Create clean, readable, and efficient data processing workflows.
 Performance Optimization: Minimize the overhead of repeated computations.
 Scalability: Handle large-scale data or infinite sequences seamlessly.
+
 """
 
 # Processing Large Files or Streams

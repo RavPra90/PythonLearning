@@ -42,7 +42,7 @@ if __name__ == "__main__":
 
 What is a Package?
 A package is a collection of modules organized into directories with a 
-special __init__.py file (can be empty). 
+special __init__.py file (can be empty). This insures that it is a Python Package 
 This structure allows you to create a hierarchical module namespace.
 
 Creating a Package
