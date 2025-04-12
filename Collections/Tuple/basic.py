@@ -1,6 +1,6 @@
 # Tuples in Python are immutable, ordered collections of items.
 # They are commonly used for grouping related data. Below, we cover both basic and advanced concepts with code examples.
-#
+
 #   Creating a Tuple
 # Tuples are defined using parentheses `()`.
 # Empty tuple
