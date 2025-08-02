@@ -1,5 +1,5 @@
 # In Python, dictionaries are key-value pair collections.
-# Here's a comprehensive explanation withdifferent ways to define and access elements from a dictionary
+# Here's a comprehensive explanation with different ways to define and access elements from a dictionary
 
 
 # 1. Defining a Dictionary

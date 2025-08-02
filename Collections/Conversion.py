@@ -5,7 +5,17 @@ Below are various methods to achieve these conversions, along with explanations 
 """
 
 
-# 1. Converting Between Lists, Tuples, and Sets
+# 1. Converting Between Lists, Tuples, and Sets INT
+
+# List to Int
+l= [1,2,3,4]
+x = int(''.join(str(d) for d in l))
+print(x) # Output: 1234
+
+#Int to list
+x= 1234
+l = [int(d) for d in str(x)]
+print(l)  #[1, 2, 3, 4]
 
 #  1.1 List to Tuple
 # Use the `tuple()` function to convert a list into a tuple.

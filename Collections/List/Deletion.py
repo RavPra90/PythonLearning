@@ -53,7 +53,8 @@ print(lst)  # Output: [1, 2, 4, 5]
 # 6. `filter()` Function
 # Uses a filtering condition to remove elements and returns an iterator.
 # - Use Case: Similar to list comprehension, but more functional.
-lst = [1, 2, 3, 4, 5]
+lst = [1, 2, 3
+    , 4, 5]
 lst = list(filter(lambda x: x != 3, lst))  # Removes all occurrences of 3
 print(lst)  # Output: [1, 2, 4, 5]
 

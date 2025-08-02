@@ -142,4 +142,3 @@ print(sub.find("n"))  # it will give me the first occurence of n  here o/p is 4
 print(sub.find("z"))  # it will show -1 when the string is not present.
 print(sub.index("n"))  # 4
 # print(sub.index("z")) # it will throw an error ValueError: substring not found
-

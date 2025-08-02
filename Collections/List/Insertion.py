@@ -25,6 +25,7 @@ print(lst)  # Output: [0, 1, 100, 2, 3]
 lst.insert(9, 60)  # Inserts 60 at the end
 print(lst)  #Output : [0, 1, 100, 2, 3, 60]
 
+
 # 3. `list.extend(iterable)`
 # Extends the list by appending all elements from another iterable (e.g., list, tuple, set, string).
 
@@ -69,7 +70,7 @@ print(new_lst)  # Output: [1, 10, 2, 20, 3, 30, 40]
 
 
 # 8. Using `deque` (from `collections` module)
-# Forefficient inserts at both ends of a list, consider using a `deque`.
+# For efficient inserts at both ends of a list, consider using a `deque`.
 from collections import deque
 
 dq = deque([1, 2, 3])

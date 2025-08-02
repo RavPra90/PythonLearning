@@ -20,6 +20,8 @@ data = [("a", 1), ("b", 2), ("a", 3), ("b", 4), ("c", 5)]
 grouped = defaultdict(list)
 # This creates a dictionary where each key will have a default value of an empty list ([]) if it doesn’t already exist.
 
+print (grouped)
+
 for key, value in data:
     grouped[key].append(value)
 
@@ -109,6 +111,9 @@ print(inverted)  # Output: {1: 'a', 2: 'b', 3: 'c'}
 data = {"c": 3, "a": 10, "b": 2}
 sorted_by_keys = dict(sorted(data.items()))
 print(sorted_by_keys)  # Output: {'a': 10, 'b': 2, 'c': 3}
+sorted_custom = dict(sorted(data.items(), key=lambda x: x[0]))
+print("custom sorting : ",sorted_custom)    # Output: {'a': 10, 'b': 2, 'c': 3}
+
 
 # By Values
 sorted_by_values = dict(sorted(data.items(), key=lambda x: x[1]))
